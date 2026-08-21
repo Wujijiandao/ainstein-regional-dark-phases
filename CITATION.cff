@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite this release and the associated manuscript."
+title: "AInstein Regional Dark Phases: Reproducibility Code"
+version: "1.0.0"
+date-released: 2026-08-21
+type: software
+authors:
+  - family-names: Zhang
+    given-names: Yuzhan
+    affiliation: Independent Researcher
+abstract: >-
+  Deterministic reproducibility code for a regional gravitational phase framework
+  for dark-sector phenomenology, including phase-transition diagnostics,
+  regional matter–geometry selectors, basin hierarchy tests, interface dynamics,
+  geometric active-charge calculations, SPARC diagnostics, and a 3D synthetic
+  watershed stress test.
+keywords:
+  - dark matter
+  - dark energy
+  - emergent gravity
+  - phase transitions
+  - cosmic web
+  - galaxy dynamics
+  - reproducible research
+license: MIT
+preferred-citation:
+  type: software
+  title: "AInstein Regional Dark Phases: Reproducibility Code"
+  authors:
+    - family-names: Zhang
+      given-names: Yuzhan
+      affiliation: Independent Researcher
+  version: "1.0.0"
+  date-released: 2026-08-21

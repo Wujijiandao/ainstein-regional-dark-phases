@@ -1,0 +1,16 @@
+3D synthetic non-spherical basin stress test
+box_hinvMpc=256.0
+Ngrid=80
+R_smooth_hinvMpc=4.0
+seeds=(11, 23, 47, 91)
+persistence_rms=(0.0, 0.05, 0.1, 0.2)
+sigma8_target=0.811000000000
+sigma8_check_max_error=1.110e-16
+conditional_xi0_hinvMpc=3.12938
+conditional_beta_gamma=1.0
+no_persistence_volfrac_gamma_ge_1_range=0.031426,0.053537
+no_persistence_volfrac_finite_size_active_range=0.016977,0.029367
+all_segmentations_volfrac_finite_size_active_range=0.006686,0.029367
+interpretation=An instantaneous single-scale Gaussian watershed produces only a small active V fraction in this deliberately conservative toy test. The result therefore does not validate the cosmological abundance mechanism; instead it shows that nonlinear basin evolution, hierarchy/history, or a different coarse-graining rule is necessary.
+status=stress-test/obstruction, not an N-body prediction
+

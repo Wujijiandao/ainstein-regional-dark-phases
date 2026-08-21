@@ -1,0 +1,11 @@
+Monotone V-phase conversion sign audit
+synthetic_phi_equals_a2_w = -1.666646774988 (exact -5/3)
+theorem: nondecreasing phi_V with fixed epsilon_V and negligible interface energy implies w_residual <= -1
+fixed-scale external-growth benchmark:
+  BBKS-Sugiyama, R=8.839128: phiV0=0.617510812, w_res0=-1.232392117
+  BBKS-Sugiyama, R=10.000000: phiV0=0.574078238, w_res0=-1.257978350
+  BBKS-Sugiyama, R=11.196229: phiV0=0.532078901, w_res0=-1.287491251
+  EH98-zero-baryon, R=8.839128: phiV0=0.614553940, w_res0=-1.233978839
+  EH98-zero-baryon, R=10.000000: phiV0=0.567237458, w_res0=-1.262463459
+  EH98-zero-baryon, R=11.196229: phiV0=0.521332312, w_res0=-1.295796941
+interpretation: benchmark values are a sign/timing stress test, not a self-consistent CPL likelihood.

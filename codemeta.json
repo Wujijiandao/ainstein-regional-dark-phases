@@ -1,0 +1,27 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "AInstein Regional Dark Phases: Reproducibility Code",
+  "description": "Deterministic analysis and regression-test suite for a regional gravitational phase framework for dark-sector phenomenology.",
+  "version": "1.0.0",
+  "datePublished": "2026-08-21",
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Yuzhan",
+      "familyName": "Zhang",
+      "affiliation": "Independent Researcher"
+    }
+  ],
+  "license": "https://spdx.org/licenses/MIT.html",
+  "programmingLanguage": "Python",
+  "runtimePlatform": "Python >=3.10",
+  "keywords": [
+    "dark matter",
+    "dark energy",
+    "emergent gravity",
+    "phase transitions",
+    "cosmic web",
+    "galaxy dynamics"
+  ]
+}

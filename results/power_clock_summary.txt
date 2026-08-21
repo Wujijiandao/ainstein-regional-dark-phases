@@ -1,0 +1,35 @@
+Power-spectrum closure audit for regional V-phase prototype
+Planck-like parameters: Om=0.315, Ob=0.049, h=0.674, ns=0.965, sigma8=0.811
+tau_at_50pct_Eulerian_V = 2.940769839691
+required_sigma_for_half_V = 1.714867295067
+sigma8^2 = 0.657721000000
+phiV_at_tau_sigma8sq = 0.004180793204
+observed_median_void_RE_range_hinvMpc = 15.000,19.000
+spherical_RL_range_hinvMpc = 8.839128,11.196229
+
+Transfer-shape sensitivity:
+BBKS-Sugiyama: R_L giving S=tau_half today = 2.139129993 h^-1 Mpc
+  R_L=8.839128: sigma=0.756912709, S=0.572916848, phiV=0.00169754187756, nu_v=3.589582
+  R_L=11.196229: sigma=0.637167474, S=0.405982390, phiV=0.000101127291404, nu_v=4.264185
+  R_L=1.0: z(phiV=0.5)=0.630057859
+  R_L=2.0: z(phiV=0.5)=0.059536125
+  R_L=3.0: z(phiV=0.5)=never by z=0
+EH98-zero-baryon: R_L giving S=tau_half today = 2.416608035 h^-1 Mpc
+  R_L=8.839128: sigma=0.752350587, S=0.566031406, phiV=0.00155996808115, nu_v=3.611348
+  R_L=11.196229: sigma=0.623849239, S=0.389187873, phiV=6.69213005423e-05, nu_v=4.355219
+  R_L=1.0: z(phiV=0.5)=0.819931088
+  R_L=2.0: z(phiV=0.5)=0.183459446
+  R_L=3.0: z(phiV=0.5)=never by z=0
+
+Inverse selector target (self-consistent spherical density ratio):
+BBKS-Sugiyama:
+  R_L=8.839128: required_deltaL_V=-0.710644070, rho/rhobar=0.555165299, Upsilon=1.562401286
+  R_L=11.196229: required_deltaL_V=-0.560627873, rho/rhobar=0.618165180, Upsilon=1.448057404
+EH98-zero-baryon:
+  R_L=8.839128: required_deltaL_V=-0.704503597, rho/rhobar=0.557535598, Upsilon=1.557760640
+  R_L=11.196229: required_deltaL_V=-0.545281314, rho/rhobar=0.625262352, Upsilon=1.436242599
+
+Interpretation:
+Within the spherical shell-crossing + fixed-scale Markov prototype, mature void scales are far too low-variance to make V volume-dominant by z=0.
+Therefore the V selector must occur earlier than spherical shell crossing, be genuinely multiscale/topological, or use a parent spectrum/domain rule different from this benchmark.
+This is an obstruction test, not a precision cosmology likelihood.

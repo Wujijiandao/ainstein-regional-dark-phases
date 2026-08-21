@@ -1,0 +1,12 @@
+Derived state coordinate: Upsilon=(H_D/H_bg)*sqrt(rho_bg/rho_D)
+max_identity_error_overdense = 4.630e-14
+max_identity_error_void = 3.997e-14
+Exact EdS identities: overdense Upsilon=cos(theta/2); void Upsilon=cosh(eta/2).
+Interpretation: background=1; overdense expansion 0<Upsilon<1; turnaround=0; collapse Upsilon<0; void Upsilon>1.
+
+Standard dynamical landmarks (not fitted phase thresholds):
+overdense turnaround: theta=pi, Upsilon=0, delta_L=1.062409652400
+spherical collapse barrier used in excursion-set prototype: delta_c=1.686
+void shell crossing: delta_L=-2.717000000000, eta=3.487439170205, rho/rho_bg=0.204735922511, delta_NL=-0.795264077489, Upsilon=2.946721693901
+matter-curvature equality: delta_L=-0.516745404162, eta=1.762747174039, rho/rho_bg=0.638816488503, delta_NL=-0.361183511497, Upsilon=1.414213562373
+The void barrier prevents mildly underdense early regions (Upsilon just above 1) from being labelled vacuum phase.

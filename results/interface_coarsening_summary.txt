@@ -1,0 +1,10 @@
+Interface-coarsening benchmark (not a cosmological fit)
+phi_void(z=2) ~= 0.600
+phi_void(z=0) ~= 0.780
+wall area density z=0 ~= 0.150000 (h^-1 Mpc)^-1
+hydraulic interface length z=0 = 15.600000000000 h^-1 Mpc
+VAST median void effective radius = 15.0-19.0 h^-1 Mpc
+interval average p_phi = 0.238814245183
+interval lower bound q_L > 1.238814245183
+crossing lambda upper benchmark = 0.079604748394
+crossing ell upper benchmark = 1.241834074954 h^-1 Mpc

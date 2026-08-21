@@ -1,0 +1,9 @@
+History-dependent basin-state audit
+prototype=absorbing activation after first Gamma>=1 eligibility crossing
+instantaneous_switch_count=18
+history_switch_count=6
+phi_history=0.000000,0.450000,0.750000,0.750000,1.000000,1.000000
+phi_history_monotone=True
+final_maximal_active=['A', 'B']
+final_antichain=True
+interpretation=algorithmic limiting case only; deactivation/interface physics is not derived

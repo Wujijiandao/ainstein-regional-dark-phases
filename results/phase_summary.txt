@@ -1,0 +1,29 @@
+H_coexistence = 0.341688495018
+chi_parent_at_coexistence = 0.087415890295
+chi_selected_at_coexistence = 1.035423691165
+jump = 0.948007800871
+central_spinodal_H = 0.928501997833
+
+Miyamoto-Nagai b/a=0.1
+R/a= 0.2 eta=0.923361539 sqrt_eta=0.960917030
+R/a= 0.5 eta=0.963222558 sqrt_eta=0.981439024
+R/a= 1.0 eta=0.991724351 sqrt_eta=0.995853579
+R/a= 2.0 eta=0.999318762 sqrt_eta=0.999659323
+R/a= 4.0 eta=0.999971058 sqrt_eta=0.999985529
+R/a= 8.0 eta=0.999999038 sqrt_eta=0.999999519
+
+Miyamoto-Nagai b/a=0.3
+R/a= 0.2 eta=0.954154736 sqrt_eta=0.976808444
+R/a= 0.5 eta=0.967871038 sqrt_eta=0.983804370
+R/a= 1.0 eta=0.987275731 sqrt_eta=0.993617497
+R/a= 2.0 eta=0.998132153 sqrt_eta=0.999065640
+R/a= 4.0 eta=0.999883703 sqrt_eta=0.999941850
+R/a= 8.0 eta=0.999995286 sqrt_eta=0.999997643
+
+Miyamoto-Nagai b/a=1.0
+R/a= 0.2 eta=0.988072159 sqrt_eta=0.994018188
+R/a= 0.5 eta=0.989243082 sqrt_eta=0.994606999
+R/a= 1.0 eta=0.992260500 sqrt_eta=0.996122733
+R/a= 2.0 eta=0.996994256 sqrt_eta=0.998495997
+R/a= 4.0 eta=0.999540891 sqrt_eta=0.999770419
+R/a= 8.0 eta=0.999967357 sqrt_eta=0.999983678

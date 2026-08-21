@@ -1,0 +1,17 @@
+Hamiltonian-to-Landau bias matching audit
+beta_benchmark = 1
+H_coexistence_abs = 0.341688495018
+H_parent_spinodal_abs = 0.928501997833
+Delta_chi = 0.948007800871
+C_sigma = 0.396830116706
+near_coexistence_dB_dGamma = 1.05484364061
+conditional_xi_hMpc = 3.12938181925
+hydraulic_basin_scale_hMpc = 15.6
+R_over_xi = 4.98501010776
+Gamma_growth_threshold = 1.15920935289
+Gamma_overshoot = 0.159209352891
+matched_H_V = -0.512592527206
+matched_bias_excess_abs = 0.170904032188
+matched_Delta_w = 0.159209352891
+Rc_over_xi_backcheck = 4.98501010776
+interpretation = Delta w = beta (Gamma-1) removes an arbitrary bias function but leaves one normalization/coupling beta; beta=1 is a benchmark, not a microscopic derivation

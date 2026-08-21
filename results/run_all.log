@@ -1,0 +1,206 @@
+H_coexistence = 0.341688495018
+chi_parent_at_coexistence = 0.087415890295
+chi_selected_at_coexistence = 1.035423691165
+jump = 0.948007800871
+central_spinodal_H = 0.928501997833
+
+Miyamoto-Nagai b/a=0.1
+R/a= 0.2 eta=0.923361539 sqrt_eta=0.960917030
+R/a= 0.5 eta=0.963222558 sqrt_eta=0.981439024
+R/a= 1.0 eta=0.991724351 sqrt_eta=0.995853579
+R/a= 2.0 eta=0.999318762 sqrt_eta=0.999659323
+R/a= 4.0 eta=0.999971058 sqrt_eta=0.999985529
+R/a= 8.0 eta=0.999999038 sqrt_eta=0.999999519
+
+Miyamoto-Nagai b/a=0.3
+R/a= 0.2 eta=0.954154736 sqrt_eta=0.976808444
+R/a= 0.5 eta=0.967871038 sqrt_eta=0.983804370
+R/a= 1.0 eta=0.987275731 sqrt_eta=0.993617497
+R/a= 2.0 eta=0.998132153 sqrt_eta=0.999065640
+R/a= 4.0 eta=0.999883703 sqrt_eta=0.999941850
+R/a= 8.0 eta=0.999995286 sqrt_eta=0.999997643
+
+Miyamoto-Nagai b/a=1.0
+R/a= 0.2 eta=0.988072159 sqrt_eta=0.994018188
+R/a= 0.5 eta=0.989243082 sqrt_eta=0.994606999
+R/a= 1.0 eta=0.992260500 sqrt_eta=0.996122733
+R/a= 2.0 eta=0.996994256 sqrt_eta=0.998495997
+R/a= 4.0 eta=0.999540891 sqrt_eta=0.999770419
+R/a= 8.0 eta=0.999967357 sqrt_eta=0.999983678
+
+Derived state coordinate: Upsilon=(H_D/H_bg)*sqrt(rho_bg/rho_D)
+max_identity_error_overdense = 4.630e-14
+max_identity_error_void = 3.997e-14
+Exact EdS identities: overdense Upsilon=cos(theta/2); void Upsilon=cosh(eta/2).
+Interpretation: background=1; overdense expansion 0<Upsilon<1; turnaround=0; collapse Upsilon<0; void Upsilon>1.
+
+Standard dynamical landmarks (not fitted phase thresholds):
+overdense turnaround: theta=pi, Upsilon=0, delta_L=1.062409652400
+spherical collapse barrier used in excursion-set prototype: delta_c=1.686
+void shell crossing: delta_L=-2.717000000000, eta=3.487439170205, rho/rho_bg=0.204735922511, delta_NL=-0.795264077489, Upsilon=2.946721693901
+matter-curvature equality: delta_L=-0.516745404162, eta=1.762747174039, rho/rho_bg=0.638816488503, delta_NL=-0.361183511497, Upsilon=1.414213562373
+The void barrier prevents mildly underdense early regions (Upsilon just above 1) from being labelled vacuum phase.
+
+Two-barrier regional phase-fraction prototype
+delta_c = 1.686000
+delta_v = -2.717000
+asymptotic_lagrangian_C = 0.617079264138
+asymptotic_lagrangian_V = 0.382920735862
+tau_at_50pct_Eulerian_V = 2.940769839691
+illustrative_wV_app_at_tau3_EdS = -1.750282307086
+NOTE: tau=D^2 S_Omega is a variance clock, not a fitted redshift.
+NOTE: Eulerian weighting uses idealized EdS spherical density ratios.
+
+tau= 0.5 Lagrangian(C,V,D)=(0.017108667,0.000121828,0.982769505) EulerianVolume(C,V,D)=(0.000097922,0.000619375,0.999282703) wV_app_EdS=-6.254841246
+tau= 1.0 Lagrangian(C,V,D)=(0.091795799,0.006587660,0.901616541) EulerianVolume(C,V,D)=(0.000552593,0.035225431,0.964221976) wV_app_EdS=-3.774380924
+tau= 2.0 Lagrangian(C,V,D)=(0.233189398,0.054688693,0.712121909) EulerianVolume(C,V,D)=(0.001330066,0.277079303,0.721590631) wV_app_EdS=-2.304013578
+tau= 3.0 Lagrangian(C,V,D)=(0.330308863,0.116288075,0.553403062) EulerianVolume(C,V,D)=(0.001635690,0.511514892,0.486849418) wV_app_EdS=-1.750282307
+tau= 4.0 Lagrangian(C,V,D)=(0.398857744,0.171974417,0.429167839) EulerianVolume(C,V,D)=(0.001738696,0.665904145,0.332357159) wV_app_EdS=-1.488521820
+tau= 8.0 Lagrangian(C,V,D)=(0.539496287,0.305461654,0.155042059) EulerianVolume(C,V,D)=(0.001801841,0.906206202,0.091991956) wV_app_EdS=-1.156747434
+tau=16.0 Lagrangian(C,V,D)=(0.606962899,0.372804407,0.020232694) EulerianVolume(C,V,D)=(0.001809937,0.987471727,0.010718336) wV_app_EdS=-1.029943532
+
+Power-spectrum closure audit for regional V-phase prototype
+Planck-like parameters: Om=0.315, Ob=0.049, h=0.674, ns=0.965, sigma8=0.811
+tau_at_50pct_Eulerian_V = 2.940769839691
+required_sigma_for_half_V = 1.714867295067
+sigma8^2 = 0.657721000000
+phiV_at_tau_sigma8sq = 0.004180793204
+observed_median_void_RE_range_hinvMpc = 15.000,19.000
+spherical_RL_range_hinvMpc = 8.839128,11.196229
+
+Transfer-shape sensitivity:
+BBKS-Sugiyama: R_L giving S=tau_half today = 2.139129993 h^-1 Mpc
+  R_L=8.839128: sigma=0.756912709, S=0.572916848, phiV=0.00169754187756, nu_v=3.589582
+  R_L=11.196229: sigma=0.637167474, S=0.405982390, phiV=0.000101127291404, nu_v=4.264185
+  R_L=1.0: z(phiV=0.5)=0.630057859
+  R_L=2.0: z(phiV=0.5)=0.059536125
+  R_L=3.0: z(phiV=0.5)=never by z=0
+EH98-zero-baryon: R_L giving S=tau_half today = 2.416608035 h^-1 Mpc
+  R_L=8.839128: sigma=0.752350587, S=0.566031406, phiV=0.00155996808115, nu_v=3.611348
+  R_L=11.196229: sigma=0.623849239, S=0.389187873, phiV=6.69213005423e-05, nu_v=4.355219
+  R_L=1.0: z(phiV=0.5)=0.819931088
+  R_L=2.0: z(phiV=0.5)=0.183459446
+  R_L=3.0: z(phiV=0.5)=never by z=0
+
+Inverse selector target (self-consistent spherical density ratio):
+BBKS-Sugiyama:
+  R_L=8.839128: required_deltaL_V=-0.710644070, rho/rhobar=0.555165299, Upsilon=1.562401286
+  R_L=11.196229: required_deltaL_V=-0.560627873, rho/rhobar=0.618165180, Upsilon=1.448057404
+EH98-zero-baryon:
+  R_L=8.839128: required_deltaL_V=-0.704503597, rho/rhobar=0.557535598, Upsilon=1.557760640
+  R_L=11.196229: required_deltaL_V=-0.545281314, rho/rhobar=0.625262352, Upsilon=1.436242599
+
+Interpretation:
+Within the spherical shell-crossing + fixed-scale Markov prototype, mature void scales are far too low-variance to make V volume-dominant by z=0.
+Therefore the V selector must occur earlier than spherical shell crossing, be genuinely multiscale/topological, or use a parent spectrum/domain rule different from this benchmark.
+This is an obstruction test, not a precision cosmology likelihood.
+
+Regional matter-curvature equality selector audit
+Upsilon_curvature_equality = 1.414213562373
+eta_curvature_equality = 1.762747174039
+deltaL_curvature_equality = -0.516745404162
+rho_over_background_curvature_equality = 0.638816488503
+Omega_m_local = 0.500000000000
+Omega_k_local = 0.500000000000
+tau_at_50pct_Eulerian_V = 0.358216707503
+required_sigma_for_half_V = 0.598512077992
+benchmark_median_RL_range_hinvMpc = 8.839127873,11.196228639
+
+Planck-normalized transfer-shape benchmarks:
+BBKS-Sugiyama:
+  R_L=8.839128: sigma=0.756912709, S=0.572916848, phiV_z0=0.617510812, z(phiV=0.5)=0.445221151
+  R_L=11.196229: sigma=0.637167474, S=0.405982390, phiV_z0=0.532078901, z(phiV=0.5)=0.117971794
+EH98-zero-baryon:
+  R_L=8.839128: sigma=0.752350587, S=0.566031406, phiV_z0=0.614553940, z(phiV=0.5)=0.433463570
+  R_L=11.196229: sigma=0.623849239, S=0.389187873, phiV_z0=0.521332312, z(phiV=0.5)=0.078275809
+
+Interpretation:
+In an EdS spherical separate universe, Upsilon^2=1/Omega_m,local exactly.
+Matter-curvature equality therefore supplies a non-fitted regional dynamical crossover at Upsilon=sqrt(2).
+Inserted into the same first-passage bookkeeping, this earlier barrier lies in the variance regime needed for a volume-rich V branch on large-void scales.
+Curvature domination itself is not acceleration (it is coasting/w=-1/3 in an FRW bookkeeping); the equality is tested only as a phase-selector candidate.
+The calculation is not a precision cosmology fit and does not derive the vacuum free-energy density.
+
+Topological basin antichain audit
+eligible_nodes=['A', 'A1', 'A2', 'B1']
+maximal_eligible=['A', 'B1']
+antichain=True
+naive_nested_volume_sum=1.300000
+maximal_antichain_volume=0.750000
+note=synthetic hierarchy only; no cosmological abundance is inferred
+Monotone V-phase conversion sign audit
+synthetic_phi_equals_a2_w = -1.666646774988 (exact -5/3)
+theorem: nondecreasing phi_V with fixed epsilon_V and negligible interface energy implies w_residual <= -1
+fixed-scale external-growth benchmark:
+  BBKS-Sugiyama, R=8.839128: phiV0=0.617510812, w_res0=-1.232392117
+  BBKS-Sugiyama, R=10.000000: phiV0=0.574078238, w_res0=-1.257978350
+  BBKS-Sugiyama, R=11.196229: phiV0=0.532078901, w_res0=-1.287491251
+  EH98-zero-baryon, R=8.839128: phiV0=0.614553940, w_res0=-1.233978839
+  EH98-zero-baryon, R=10.000000: phiV0=0.567237458, w_res0=-1.262463459
+  EH98-zero-baryon, R=11.196229: phiV0=0.521332312, w_res0=-1.295796941
+interpretation: benchmark values are a sign/timing stress test, not a self-consistent CPL likelihood.
+
+History-dependent basin-state audit
+prototype=absorbing activation after first Gamma>=1 eligibility crossing
+instantaneous_switch_count=18
+history_switch_count=6
+phi_history=0.000000,0.450000,0.750000,0.750000,1.000000,1.000000
+phi_history_monotone=True
+final_maximal_active=['A', 'B']
+final_antichain=True
+interpretation=algorithmic limiting case only; deactivation/interface physics is not derived
+Interface-coarsening benchmark (not a cosmological fit)
+phi_void(z=2) ~= 0.600
+phi_void(z=0) ~= 0.780
+wall area density z=0 ~= 0.150000 (h^-1 Mpc)^-1
+hydraulic interface length z=0 = 15.600000000000 h^-1 Mpc
+VAST median void effective radius = 15.0-19.0 h^-1 Mpc
+interval average p_phi = 0.238814245183
+interval lower bound q_L > 1.238814245183
+crossing lambda upper benchmark = 0.079604748394
+crossing ell upper benchmark = 1.241834074954 h^-1 Mpc
+Sextic phase-field planar-interface audit
+H_coex = 0.341688495018
+chi_D = 0.087415890295
+chi_daughter = 1.035423691165
+C_sigma = 0.396830116706
+C_10_90 = 1.693129938128
+d10_90/ell_if_E0_eq_epsilonV = 4.266636696286
+interface_crossing_ell_upper_benchmark = 1.241834074954 h^-1 Mpc
+corresponding_d10_90_if_E0_eq_epsilonV = 5.298454834898 h^-1 Mpc
+interpretation = conditional scale audit only; kappa and E0/epsilonV are not derived
+Thin-interface / nucleation audit
+H_coex = 0.341688495018
+H_spinodal = 0.928501997833
+jump = 0.948007800871
+C_sigma = 0.396830116706
+C_10_90 = 1.69312993813
+near_coex_Rc_coeff = 0.837187450021
+conditional_xi_hMpc = 3.12938181925
+void_scale_hMpc = 15.6
+target_R_over_xi = 4.98501010776
+H_for_target_Rc = 0.512592527206
+Delta_H_for_target_Rc = 0.170904032188
+Delta_w_for_target_Rc = 0.159209352891
+barrier_dimless = 41.3071584445
+speed_at_half_Rc = -0.401202797339
+speed_at_Rc = -3.88578058619e-16
+speed_at_twice_Rc = 0.20060139867
+interpretation = deterministic thin-interface scale audit only; tau_chi, kappa/E0, and a microscopic nucleation/noise law remain underived
+Hamiltonian-to-Landau bias matching audit
+beta_benchmark = 1
+H_coexistence_abs = 0.341688495018
+H_parent_spinodal_abs = 0.928501997833
+Delta_chi = 0.948007800871
+C_sigma = 0.396830116706
+near_coexistence_dB_dGamma = 1.05484364061
+conditional_xi_hMpc = 3.12938181925
+hydraulic_basin_scale_hMpc = 15.6
+R_over_xi = 4.98501010776
+Gamma_growth_threshold = 1.15920935289
+Gamma_overshoot = 0.159209352891
+matched_H_V = -0.512592527206
+matched_bias_excess_abs = 0.170904032188
+matched_Delta_w = 0.159209352891
+Rc_over_xi_backcheck = 4.98501010776
+interpretation = Delta w = beta (Gamma-1) removes an arbitrary bias function but leaves one normalization/coupling beta; beta=1 is a benchmark, not a microscopic derivation

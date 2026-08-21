@@ -1,0 +1,26 @@
+Regional matter-curvature equality selector audit
+Upsilon_curvature_equality = 1.414213562373
+eta_curvature_equality = 1.762747174039
+deltaL_curvature_equality = -0.516745404162
+rho_over_background_curvature_equality = 0.638816488503
+Omega_m_local = 0.500000000000
+Omega_k_local = 0.500000000000
+tau_at_50pct_Eulerian_V = 0.358216707503
+required_sigma_for_half_V = 0.598512077992
+benchmark_median_RL_range_hinvMpc = 8.839127873,11.196228639
+
+Planck-normalized transfer-shape benchmarks:
+BBKS-Sugiyama:
+  R_L=8.839128: sigma=0.756912709, S=0.572916848, phiV_z0=0.617510812, z(phiV=0.5)=0.445221151
+  R_L=11.196229: sigma=0.637167474, S=0.405982390, phiV_z0=0.532078901, z(phiV=0.5)=0.117971794
+EH98-zero-baryon:
+  R_L=8.839128: sigma=0.752350587, S=0.566031406, phiV_z0=0.614553940, z(phiV=0.5)=0.433463570
+  R_L=11.196229: sigma=0.623849239, S=0.389187873, phiV_z0=0.521332312, z(phiV=0.5)=0.078275809
+
+Interpretation:
+In an EdS spherical separate universe, Upsilon^2=1/Omega_m,local exactly.
+Matter-curvature equality therefore supplies a non-fitted regional dynamical crossover at Upsilon=sqrt(2).
+Inserted into the same first-passage bookkeeping, this earlier barrier lies in the variance regime needed for a volume-rich V branch on large-void scales.
+Curvature domination itself is not acceleration (it is coasting/w=-1/3 in an FRW bookkeeping); the equality is tested only as a phase-selector candidate.
+The calculation is not a precision cosmology fit and does not derive the vacuum free-energy density.
+

@@ -1,0 +1,18 @@
+Thin-interface / nucleation audit
+H_coex = 0.341688495018
+H_spinodal = 0.928501997833
+jump = 0.948007800871
+C_sigma = 0.396830116706
+C_10_90 = 1.69312993813
+near_coex_Rc_coeff = 0.837187450021
+conditional_xi_hMpc = 3.12938181925
+void_scale_hMpc = 15.6
+target_R_over_xi = 4.98501010776
+H_for_target_Rc = 0.512592527206
+Delta_H_for_target_Rc = 0.170904032188
+Delta_w_for_target_Rc = 0.159209352891
+barrier_dimless = 41.3071584445
+speed_at_half_Rc = -0.401202797339
+speed_at_Rc = -3.88578058619e-16
+speed_at_twice_Rc = 0.20060139867
+interpretation = deterministic thin-interface scale audit only; tau_chi, kappa/E0, and a microscopic nucleation/noise law remain underived

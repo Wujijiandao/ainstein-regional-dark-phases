@@ -1,0 +1,17 @@
+Two-barrier regional phase-fraction prototype
+delta_c = 1.686000
+delta_v = -2.717000
+asymptotic_lagrangian_C = 0.617079264138
+asymptotic_lagrangian_V = 0.382920735862
+tau_at_50pct_Eulerian_V = 2.940769839691
+illustrative_wV_app_at_tau3_EdS = -1.750282307086
+NOTE: tau=D^2 S_Omega is a variance clock, not a fitted redshift.
+NOTE: Eulerian weighting uses idealized EdS spherical density ratios.
+
+tau= 0.5 Lagrangian(C,V,D)=(0.017108667,0.000121828,0.982769505) EulerianVolume(C,V,D)=(0.000097922,0.000619375,0.999282703) wV_app_EdS=-6.254841246
+tau= 1.0 Lagrangian(C,V,D)=(0.091795799,0.006587660,0.901616541) EulerianVolume(C,V,D)=(0.000552593,0.035225431,0.964221976) wV_app_EdS=-3.774380924
+tau= 2.0 Lagrangian(C,V,D)=(0.233189398,0.054688693,0.712121909) EulerianVolume(C,V,D)=(0.001330066,0.277079303,0.721590631) wV_app_EdS=-2.304013578
+tau= 3.0 Lagrangian(C,V,D)=(0.330308863,0.116288075,0.553403062) EulerianVolume(C,V,D)=(0.001635690,0.511514892,0.486849418) wV_app_EdS=-1.750282307
+tau= 4.0 Lagrangian(C,V,D)=(0.398857744,0.171974417,0.429167839) EulerianVolume(C,V,D)=(0.001738696,0.665904145,0.332357159) wV_app_EdS=-1.488521820
+tau= 8.0 Lagrangian(C,V,D)=(0.539496287,0.305461654,0.155042059) EulerianVolume(C,V,D)=(0.001801841,0.906206202,0.091991956) wV_app_EdS=-1.156747434
+tau=16.0 Lagrangian(C,V,D)=(0.606962899,0.372804407,0.020232694) EulerianVolume(C,V,D)=(0.001809937,0.987471727,0.010718336) wV_app_EdS=-1.029943532

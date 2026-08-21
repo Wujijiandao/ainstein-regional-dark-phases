@@ -1,0 +1,7 @@
+Topological basin antichain audit
+eligible_nodes=['A', 'A1', 'A2', 'B1']
+maximal_eligible=['A', 'B1']
+antichain=True
+naive_nested_volume_sum=1.300000
+maximal_antichain_volume=0.750000
+note=synthetic hierarchy only; no cosmological abundance is inferred

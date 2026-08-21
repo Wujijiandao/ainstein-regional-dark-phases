@@ -1,0 +1,10 @@
+Sextic phase-field planar-interface audit
+H_coex = 0.341688495018
+chi_D = 0.087415890295
+chi_daughter = 1.035423691165
+C_sigma = 0.396830116706
+C_10_90 = 1.693129938128
+d10_90/ell_if_E0_eq_epsilonV = 4.266636696286
+interface_crossing_ell_upper_benchmark = 1.241834074954 h^-1 Mpc
+corresponding_d10_90_if_E0_eq_epsilonV = 5.298454834898 h^-1 Mpc
+interpretation = conditional scale audit only; kappa and E0/epsilonV are not derived
