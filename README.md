@@ -1,6 +1,6 @@
 # AInstein Regional Dark Phases
 
-Reproducibility code for the manuscript **“Regional gravitational phases as an effective framework for dark-sector unification.”**
+Reproducibility code for the manuscript **“Regional gravitational phases and a geometric active-charge law for dark-sector phenomenology.”**
 
 ## Scope
 
@@ -18,7 +18,8 @@ The repository contains deterministic modules for:
 - diffuse phase-wall and thin-interface constants;
 - Hamiltonian-bias / finite-size matching;
 - geometric active-charge and SPARC diagnostics;
-- 3D Gaussian-field watershed stress test.
+- 3D Gaussian-field watershed stress test;
+- history-dependent 3D Zel'dovich Lagrangian-basin stress test.
 
 ## Reproduce
 
@@ -38,10 +39,11 @@ python scripts/fetch_sparc.py
 python src/analysis_emg.py
 ```
 
-## Frozen v1.0 checks
+## Frozen v1.2 checks
 
-- regression tests: **28 passed**;
+- regression tests: **30 passed**;
 - 3D synthetic-basin stress test: finite-size-active volume fraction **0.67%–2.94%** across the frozen seed/persistence grid;
+- Zel'dovich history benchmark at `D=1`: strict instantaneous **0.26%–3.89%**, absorbing-history **0.73%–4.85%**, kinematic upper envelope **1.50%–8.72%**;
 - SPARC diagnostic (when the public table is present): `N=2693`, `a_E=1.097458984856508e-10 m s^-2`, `chi2/dof=1.610215393925522`, raw RMS `0.1329097576083664 dex`.
 
 The 3D synthetic test is intentionally an obstruction test, not an N-body prediction. Its low active volume fraction shows that an instantaneous single-scale Gaussian watershed is insufficient to generate a volume-dominant V phase.
@@ -58,7 +60,14 @@ The 3D synthetic test is intentionally an obstruction test, not an N-body predic
 
 ## Citation and archival release
 
-GitHub citation metadata are in `CITATION.cff`. Zenodo GitHub-integration metadata are in `.zenodo.json`. When a GitHub release is archived in Zenodo, Zenodo will mint a DOI for that software version. After the DOI exists, update the manuscript Code Availability statement and, if desired, add the article DOI as a related identifier in a later metadata-only Zenodo update/version.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22042564.svg)](https://doi.org/10.5281/zenodo.22042564)
+
+- GitHub repository: https://github.com/Wujijiandao/ainstein-regional-dark-phases
+- Submission release: https://github.com/Wujijiandao/ainstein-regional-dark-phases/releases/tag/v1.2.0
+- Stable software archive DOI: `10.5281/zenodo.22042564`
+- Author ORCID: https://orcid.org/0009-0000-3121-7972
+
+`CITATION.cff`, `.zenodo.json` and `codemeta.json` contain machine-readable metadata. The manuscript cites the stable project DOI together with the exact GitHub release tag used for the submission. Zenodo may additionally expose version-specific DOIs; the project-level DOI above is retained as the persistent software citation used in the manuscript.
 
 ## License
 

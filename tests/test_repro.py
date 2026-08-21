@@ -257,3 +257,22 @@ def test_synthetic_3d_basin_stress_test_is_not_false_positive():
     assert max(no_persist) < 0.04
     assert max(allv) < 0.04
     assert min(allv) > 0.0
+
+
+from analysis_zeldovich_basin_history import basin_history as zeldovich_basin_history
+
+def test_zeldovich_history_obstruction_single_seed():
+    rows,_ = zeldovich_basin_history(11, 0.0)
+    r = rows[-1]
+    assert abs(r['volume_closure'] - 1.0) < 2e-8
+    assert abs(r['kinematic_upper_bound_volume_fraction'] - 0.08721793487888432) < 2e-11
+    assert abs(r['instantaneous_active_volume_fraction'] - 0.030339792355622047) < 2e-11
+    assert abs(r['absorbing_active_volume_fraction'] - 0.03669171598333042) < 2e-11
+    assert r['kinematic_upper_bound_volume_fraction'] < 0.10
+
+
+def test_zeldovich_absorbing_history_is_monotone_single_seed():
+    rows,_ = zeldovich_basin_history(11, 0.0)
+    phi = [r['absorbing_active_volume_fraction'] for r in rows]
+    assert all(b >= a - 1e-14 for a,b in zip(phi,phi[1:]))
+    assert phi[0] == 0.0 and phi[-1] < 0.05

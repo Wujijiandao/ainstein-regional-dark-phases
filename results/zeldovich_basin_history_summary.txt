@@ -1,0 +1,18 @@
+3D Zel'dovich Lagrangian-basin history stress test
+box_hinvMpc=256.0
+Ngrid=80
+R_smooth_hinvMpc=4.0
+seeds=(11, 23, 47, 91)
+persistence_rms=(0.0, 0.1, 0.2)
+D_snapshots=(0.25, 0.5, 0.75, 1.0)
+sigma8_target=0.811
+conditional_xi0_hinvMpc=3.12938
+conditional_beta_gamma=1.0
+trace_identity_max_error=1.776e-15
+ZA_periodic_volume_closure_range=1.00000000,1.00000475
+D1_single_stream_volume_fraction_range=0.143304,0.300955
+D1_kinematic_upper_bound_volume_fraction_range=0.014988,0.087218
+D1_instantaneous_active_volume_fraction_range=0.002614,0.038907
+D1_absorbing_active_volume_fraction_range=0.007302,0.048485
+absorbing_fraction_monotone=True
+interpretation=Adding a history-bearing Zel'dovich deformation tests the selector in a minimally nonlinear Lagrangian setting. The calculation remains pre-shell-crossing and is not an N-body abundance prediction.

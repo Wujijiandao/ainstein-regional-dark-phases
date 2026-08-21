@@ -1,14 +1,12 @@
-# Pre-release checklist
+# Repository release checklist — v1.2.0
 
-- [ ] Final scientific review of every equation and claim by the author.
-- [ ] `pytest -q` passes.
-- [ ] `python run_all.py` completes on a clean environment.
-- [ ] `SHA256SUMS` regenerated after all edits.
-- [ ] `CITATION.cff` validated.
-- [ ] `.zenodo.json` parses and matches release metadata.
-- [ ] GitHub repository name/description/topics entered.
-- [ ] Zenodo GitHub integration enabled before final release if automatic archival is desired.
-- [ ] Create GitHub release/tag `v1.0.0`.
-- [ ] Verify Zenodo archive and DOI.
-- [ ] Add Zenodo DOI to manuscript Code Availability.
-- [ ] After article DOI exists, add article related identifier to Zenodo record/new software version as appropriate.
+- [x] ORCID metadata present.
+- [x] Stable Zenodo DOI present in README/CITATION/CodeMeta.
+- [x] Version set to 1.2.0 in pyproject, CITATION, CodeMeta and Zenodo JSON.
+- [x] Frozen regression suite passes locally.
+- [x] Third-party SPARC data are not relicensed in the GitHub-safe package.
+- [ ] Push updated v1.2.0 files to GitHub.
+- [ ] Create tag/release `v1.2.0`.
+- [ ] Confirm the release URL resolves publicly.
+- [ ] Confirm Zenodo GitHub integration archives the release under the project record.
+- [ ] Submit the manuscript only after the public release and DOI link resolve.

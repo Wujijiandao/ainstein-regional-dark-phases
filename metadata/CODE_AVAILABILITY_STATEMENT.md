@@ -1,5 +1,3 @@
-# Code Availability statement — final form after public release
+# Code availability
 
-> The custom Python code used for the analytical and numerical diagnostics is openly available from the project GitHub repository and archived in Zenodo under version 1.0.0 (DOI: **[insert Zenodo DOI]**). The archived release contains fixed random seeds, regression tests and reproduction instructions. The GitHub-safe repository does not redistribute the third-party SPARC radial-acceleration table; a helper script retrieves the public source file for reproducibility.
-
-Before submission/publication, replace the DOI placeholder only after Zenodo has minted the DOI.
+The custom Python code used for the analytical and numerical diagnostics is openly available at https://github.com/Wujijiandao/ainstein-regional-dark-phases. The reproducibility package used for this submission is designated GitHub release `v1.2.0` at https://github.com/Wujijiandao/ainstein-regional-dark-phases/releases/tag/v1.2.0. The software archive is cited under the stable Zenodo project DOI https://doi.org/10.5281/zenodo.22042564. Original project code is released under the MIT License; the GitHub-safe repository does not redistribute the third-party SPARC radial-acceleration table.
