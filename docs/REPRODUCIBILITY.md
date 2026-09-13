@@ -1,5 +1,38 @@
 # Reproducibility map
 
+The default branch contains two frozen layers. The root-level modules preserve the v1.2 public baseline; `current/` adds the calculations used by the PRD v2.2.0 manuscript.
+
+## Quick regression check
+
+```bash
+pip install -r requirements.txt
+pytest -q
+```
+
+The root pytest configuration collects the baseline suite plus current source-only deterministic suites. The v1.6 branch-parity and v1.7 causal-kinetics full regressions additionally require frozen descendant-history tables from the submission-matched reviewer archive; those multi-megabyte intermediates are intentionally not duplicated in the GitHub default branch.
+
+## Current PRD add-on suites
+
+- `current/reproducibility_followup/` — nonlinear PM, matched ZA–PM, descendant anchoring, selector ceiling and threshold inversion.
+- `current/research_v1.4/` — geometry-state identities, leaf-global field and scale-closure diagnostics.
+- `current/research_v1.5/` — control-basis and constitutive-driver audits.
+- `current/research_v1.6/` — one-sector/branch-parity and signed-history diagnostics.
+- `current/research_v1.7/` — causal phase kinetics and passive-memory audits.
+- `current/research_v1.8/` — retarded/Kubo response identification.
+- `current/research_v1.9/` — nonlinear 1PI, thin-wall nucleation and local-KMS implementation checks.
+- `current/research_v2.0/` — reciprocal/nonreciprocal phase–geometry feedback benchmarks.
+- `current/research_v2.2/` — shared-control/global-competition and global-budget identifiability audit.
+
+These modules reproduce deterministic identities and stress tests used in the PRD manuscript. They do not turn the low-resolution PM pilot into a precision cosmological simulation, and they do not supply a microscopic derivation of the remaining response coefficients.
+
+## Historical v1.2 baseline
+
+The exact submission snapshot is preserved by tag `v1.2.0`. The root-level baseline remains executable for continuity. The old documentation below is retained as a historical description; its original test-count wording should be read as applying to that development stage, not the current default branch.
+
+---
+
+# Reproducibility map
+
 `python run_all.py` reproduces all analyses for which required data are present:
 
 1. `analysis_phase.py` — normalized sextic coexistence/spinodal constants and Miyamoto–Nagai geometry factor.
@@ -13,9 +46,9 @@
 9. `analysis_interface_coarsening.py` — exact interface-energy EOS identity, hydraulic-scale benchmark and coarsening crossing threshold.
 10. `analysis_phase_interface.py` — normalized sextic planar-wall tension and thickness constants.
 11. `analysis_phase_front.py` — Allen-Cahn sharp-interface velocity, critical radius, and capillary-barrier audit.
-11. `analysis_emg.py` — one-parameter SPARC RAR consistency diagnostic; skipped when `data/RAR.mrt` is absent.
+12. `analysis_emg.py` — one-parameter SPARC RAR consistency diagnostic; skipped when `data/RAR.mrt` is absent.
 
-Run `pytest -q` for twenty-two deterministic regression tests. Numerical outputs are written under `results/`; manuscript figures are written under `figures/`.
+The frozen v1.2 suite contains 30 deterministic regression tests. Numerical outputs are written under `results/`; manuscript figures are written under `figures/`.
 
 ## Third-party SPARC table
 
