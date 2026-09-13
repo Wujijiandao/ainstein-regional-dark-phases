@@ -2,24 +2,37 @@
 
 Reproducibility code for the manuscript **“Regional gravitational phases and a geometric active-charge law for dark-sector phenomenology.”**
 
-## Scope
+## Current status
 
-This repository reproduces the analytical and numerical diagnostics used in the manuscript. The framework tests whether dark-matter-like and dark-energy-like phenomenology can be organized as regional phases of one coarse-grained gravitational sector. It is an effective theory, not a microscopic completion.
+The default branch tracks the **PRD science-closure candidate v2.2.0**. The earlier Communications Physics snapshot remains permanently preserved by the GitHub tag/release **v1.2.0** and is not rewritten.
 
-The repository contains deterministic modules for:
+The repository is intentionally split into two reproducibility layers:
 
-- minimal tri-stable phase potential and hysteresis;
-- spherical regional state coordinate `Upsilon`;
-- two-barrier first-passage bookkeeping;
-- Planck-normalized power-spectrum timing audits;
-- matter–geometry equality selector;
-- hierarchical basin antichain and history-dependent occupation;
-- conversion-sign and interface-coarsening tests;
-- diffuse phase-wall and thin-interface constants;
-- Hamiltonian-bias / finite-size matching;
-- geometric active-charge and SPARC diagnostics;
-- 3D Gaussian-field watershed stress test;
-- history-dependent 3D Zel'dovich Lagrangian-basin stress test.
+- the top-level `src/`, `tests/`, `results/`, `figures/`, and `docs/` directories preserve the public v1.2 baseline calculations;
+- `current/` contains the additional nonlinear particle-mesh, descendant-history, control-state, causal-response, nonlinear-1PI, stochastic-conversion, and phase–geometry feedback calculations used by the PRD v2.2.0 manuscript.
+
+This layout keeps the historical release reproducible while making the current manuscript additions explicit instead of silently overwriting the original submission snapshot.
+
+## Scientific scope
+
+AInstein tests whether part of the phenomenology usually assigned separately to dark matter and dark energy can be organized as different **regional constitutive states of one coarse-grained matter–geometry sector**. It is an effective-theory programme, not a completed microscopic unification.
+
+The current code covers:
+
+- tri-stable phase structure and interface/nucleation diagnostics;
+- regional expansion/geometry control variables and exact spherical benchmarks;
+- non-recursive basin antichain bookkeeping;
+- Gaussian, Zel'dovich, and nonlinear particle-mesh obstruction tests;
+- descendant-anchored basin histories and selector-ceiling audits;
+- leaf-constrained active-charge geometry and non-spherical field benchmarks;
+- branch-parity, causal phase kinetics, and passive-memory tests;
+- retarded/Kubo response identification;
+- nonlinear 1PI reconstruction and stochastic-conversion benchmarks;
+- reciprocal and nonreciprocal phase–geometry feedback audits;
+- shared-control/global-competition and global-budget identifiability audits;
+- the SPARC radial-acceleration consistency diagnostic.
+
+The numerical structure-formation calculations are deliberately **stress/obstruction tests**, not precision late-time cosmological simulations. The PM-derived regional variables are operational proxies and are not claimed to be direct relativistic Buchert measurements.
 
 ## Reproduce
 
@@ -29,46 +42,51 @@ python -m venv .venv
 # Linux/macOS: source .venv/bin/activate
 pip install -r requirements.txt
 pytest -q
-python run_all.py
 ```
 
-The GitHub-safe repository does not redistribute the third-party SPARC `RAR.mrt` table. To run the SPARC fit, fetch the public file using:
+For the v2.2.0 clean GitHub candidate this source-available suite reports **67 passed**. The larger reviewer archive reports **47 passed** with frozen history tables; the two counts overlap and are not additive.
+
+The root pytest configuration runs the historical v1.2 suite plus all current source-only deterministic suites. The two PM-history-dependent branch-parity/causal-kinetics suites require the larger frozen descendant-history tables supplied in the submission-matched reviewer archive and are documented separately rather than silently vendored as multi-megabyte CSV files. For analysis-by-analysis commands and scope notes, see:
+
+- `docs/REPRODUCIBILITY.md`
+- `current/README_REPRODUCIBILITY.txt`
+
+The public repository does not redistribute the third-party SPARC `RAR.mrt` table. Fetch it from its public source with:
 
 ```bash
 python scripts/fetch_sparc.py
 python src/analysis_emg.py
 ```
 
-## Frozen v1.2 checks
-
-- regression tests: **30 passed**;
-- 3D synthetic-basin stress test: finite-size-active volume fraction **0.67%–2.94%** across the frozen seed/persistence grid;
-- Zel'dovich history benchmark at `D=1`: strict instantaneous **0.26%–3.89%**, absorbing-history **0.73%–4.85%**, kinematic upper envelope **1.50%–8.72%**;
-- SPARC diagnostic (when the public table is present): `N=2693`, `a_E=1.097458984856508e-10 m s^-2`, `chi2/dof=1.610215393925522`, raw RMS `0.1329097576083664 dex`.
-
-The 3D synthetic test is intentionally an obstruction test, not an N-body prediction. Its low active volume fraction shows that an instantaneous single-scale Gaussian watershed is insufficient to generate a volume-dominant V phase.
-
 ## Repository layout
 
-- `src/` analysis modules
-- `tests/` deterministic regression tests
-- `scripts/` third-party data fetch helper
-- `results/` frozen text/CSV outputs
-- `figures/` reproducible manuscript figures
-- `docs/` derivation and reproducibility notes
-- `metadata/` GitHub and Zenodo release metadata
+- `src/` — baseline analytical/numerical modules preserved from v1.2
+- `tests/` — baseline deterministic regression tests
+- `results/` — baseline frozen text/CSV outputs
+- `figures/` — baseline reproducible manuscript figures
+- `current/` — PRD v2.2.0 manuscript-facing additions
+- `scripts/` — data-fetch helpers
+- `docs/` — reproducibility and scope notes
+- `metadata/` — release/data/code metadata
 
-## Citation and archival release
+## Versioning policy
+
+- **v1.2.0**: immutable historical Communications Physics submission snapshot.
+- **v2.1.1**: PRD referee-hardened checkpoint.
+- **v2.2.0**: current bounded PRD science-closure candidate on `main`.
+
+A tag or release must never be force-moved to a different commit. New scientific revisions receive a new version.
+
+## Citation and archive
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22042564.svg)](https://doi.org/10.5281/zenodo.22042564)
 
-- GitHub repository: https://github.com/Wujijiandao/ainstein-regional-dark-phases
-- Submission release: https://github.com/Wujijiandao/ainstein-regional-dark-phases/releases/tag/v1.2.0
-- Stable software archive DOI: `10.5281/zenodo.22042564`
-- Author ORCID: https://orcid.org/0009-0000-3121-7972
+- Repository: https://github.com/Wujijiandao/ainstein-regional-dark-phases
+- Stable Zenodo project DOI: `10.5281/zenodo.22042564`
+- ORCID: https://orcid.org/0009-0000-3121-7972
 
-`CITATION.cff`, `.zenodo.json` and `codemeta.json` contain machine-readable metadata. The manuscript cites the stable project DOI together with the exact GitHub release tag used for the submission. Zenodo may additionally expose version-specific DOIs; the project-level DOI above is retained as the persistent software citation used in the manuscript.
+The stable project DOI identifies the software archive across versions. `CITATION.cff`, `.zenodo.json`, and `codemeta.json` describe the current default-branch snapshot; the exact historical v1.2 metadata remain recoverable from tag `v1.2.0`.
 
 ## License
 
-MIT License for original source code. Third-party data remain subject to their source terms and are not relicensed by this repository.
+MIT License for original source code. Third-party data remain subject to their original terms and are not relicensed by this repository.

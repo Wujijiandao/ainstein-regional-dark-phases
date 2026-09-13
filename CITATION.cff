@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite the archived release and the associated manuscript."
 title: "AInstein Regional Dark Phases: Reproducibility Code"
-version: "1.2.0"
-date-released: 2026-08-21
+version: "2.2.0"
+date-released: 2026-09-13
 type: software
 authors:
   - family-names: Zhang
@@ -13,18 +13,18 @@ repository-code: "https://github.com/Wujijiandao/ainstein-regional-dark-phases"
 url: "https://github.com/Wujijiandao/ainstein-regional-dark-phases"
 doi: "10.5281/zenodo.22042564"
 abstract: >-
-  Deterministic reproducibility code for a regional gravitational phase framework
-  for dark-sector phenomenology, including regional matter-geometry selectors,
-  basin hierarchy and interface dynamics, geometric active-charge calculations,
-  SPARC diagnostics, a static 3D watershed obstruction test, and a history-dependent
-  Zel'dovich Lagrangian-basin stress test.
+  Deterministic reproducibility code for a regional gravitational-phase effective-theory programme,
+  including regional geometry/history controls, cosmic-web obstruction tests, leaf-constrained
+  active-charge diagnostics, causal/Kubo response, nonlinear 1PI and nucleation audits, and
+  phase–geometry feedback benchmarks.
 keywords:
   - dark matter
   - dark energy
-  - emergent gravity
+  - gravitation
   - phase transitions
   - cosmic web
   - galaxy dynamics
+  - effective field theory
   - reproducible research
 license: MIT
 preferred-citation:
@@ -35,7 +35,7 @@ preferred-citation:
       given-names: Yuzhan
       affiliation: Independent Researcher
       orcid: "https://orcid.org/0009-0000-3121-7972"
-  version: "1.2.0"
-  date-released: 2026-08-21
+  version: "2.2.0"
+  date-released: 2026-09-13
   repository-code: "https://github.com/Wujijiandao/ainstein-regional-dark-phases"
   doi: "10.5281/zenodo.22042564"

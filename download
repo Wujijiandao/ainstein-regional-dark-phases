@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.DS_Store
+*.egg-info/
+build/
+dist/
+
+# Current PRD analyses generate these locally; the heavy frozen outputs live in the reviewer archive.
+current/**/results/

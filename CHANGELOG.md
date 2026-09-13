@@ -1,5 +1,22 @@
 # Changelog
 
+## 2.2.0 - 2026-09-13
+- PRD science-closure update after the v2.1.1 referee-hardening checkpoint.
+- Adds the shared-control/global-competition audit and its deterministic regression tests.
+- Extends the passive reciprocal-feedback sign restriction to arbitrary stable shared Gaussian controls via the negative-semidefinite Schur-complement kernel `-B^T K^{-1} B`.
+- Adds the global-budget identifiability result and explicitly distinguishes a derived conserved budget from an abundance-fit constraint.
+- Keeps large reviewer-only frozen intermediate tables out of the GitHub default branch.
+- No online v2.2.0 release or Zenodo version is claimed by this source snapshot itself.
+
+## 2.1.1 - 2026-09-12
+- PRD referee-hardened reproducibility update.
+- Preserves the historical v1.2.0 tag/release unchanged while advancing `main` to the current manuscript-facing code state.
+- Adds nonlinear PM and descendant-history obstruction tests; geometry/control-state, leaf-global field, branch-parity, causal/Kubo response, nonlinear 1PI/nucleation, and phase–geometry feedback audits under `current/`.
+- Updates default-branch documentation and metadata so the repository no longer presents v1.2 as the current manuscript state.
+- Keeps all newer PM calculations explicitly labelled as low-resolution obstruction/stress tests rather than precision cosmology.
+- No new scientific result is introduced by the repository cleanup itself.
+
+
 ## 1.2.0 - 2026-08-21
 - Submission-hardening release after an adversarial pre-submission review.
 - Narrowed manuscript claims from microscopic dark-sector unification to an effective regional-phase framework.

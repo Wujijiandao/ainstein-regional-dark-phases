@@ -1,50 +1,62 @@
-# AInstein 区域暗相理论：可复现代码
+# AInstein 区域暗相框架
 
-本仓库对应稿件 **《Regional gravitational phases and a geometric active-charge law for dark-sector phenomenology》**，用于复现稿件中的解析常数、数值审计、星系诊断与三维合成 basin 压力测试。
+本仓库提供论文 **“Regional gravitational phases and a geometric active-charge law for dark-sector phenomenology”** 的可复现代码。
 
-核心研究问题是：暗物质式额外引力与暗能量式负压，是否可能是同一个粗粒化“物质—几何系统”在不同区域组织态下的两种宏观响应，而不必先验地把它们视为两种基本物质。
+## 当前状态
 
-## 一键复现
+默认分支 `main` 对应 **PRD 投稿候选版 v2.2.0**。此前 Communications Physics 投稿时使用的 **v1.2.0** 已由 GitHub tag/release 永久冻结，不改写历史快照。
+
+仓库现在分两层：
+
+- 根目录的 `src/`、`tests/`、`results/`、`figures/`、`docs/` 保留 v1.2 的公开基线计算；
+- `current/` 保存 PRD v2.2.0 新增的 nonlinear PM、descendant history、control-state、causal/Kubo response、nonlinear 1PI、stochastic conversion 与 phase–geometry feedback 等计算。
+
+这样既不会破坏旧版可复现性，也不会让默认分支继续假装停留在 v1.2。
+
+## 研究范围
+
+AInstein 检验的是：通常分别归因于暗物质与暗能量的部分引力现象，是否可以被组织为同一个粗粒化 matter–geometry sector 的不同**区域宏观构成态**。当前工作是可证伪的有效理论，不声称已经完成微观统一。
+
+当前代码覆盖：三稳态/界面与成核、区域几何控制变量、非递归 basin 选择、Gaussian/Zel'dovich/nonlinear PM obstruction tests、descendant-anchored histories、leaf-constrained active charge、causal kinetics、retarded/Kubo response、nonlinear 1PI、stochastic conversion、phase–geometry feedback，以及 SPARC 一致性诊断。
+
+PM 与 cosmic-web 数值部分是**压力测试/阻碍检验**，不是 precision late-time cosmology；PM 中的区域状态量是 operational proxy，不冒充直接的 relativistic Buchert measurement。
+
+## 复现
 
 ```bash
 python -m venv .venv
+# Windows: .venv\Scripts\activate
+# Linux/macOS: source .venv/bin/activate
 pip install -r requirements.txt
 pytest -q
-python run_all.py
 ```
 
-GitHub-safe 版本不直接再分发第三方 SPARC `RAR.mrt`，可运行：
+根目录默认 `pytest -q` 运行历史 v1.2 测试和所有无需大型冻结中间表的当前确定性测试。依赖 multi-megabyte descendant-history CSV 的 branch-parity/causal-kinetics 完整回归仍保存在投稿匹配 reviewer archive 中，不在 GitHub 主仓库重复塞入大型中间表。更详细的分析入口和适用边界见 `docs/REPRODUCIBILITY.md` 与 `current/README_REPRODUCIBILITY.txt`。
 
-```bash
-python scripts/fetch_sparc.py
-python src/analysis_emg.py
-```
+SPARC 第三方 `RAR.mrt` 数据不随仓库再分发；使用 `python scripts/fetch_sparc.py` 从公开来源获取。
 
-## v1.2 冻结结果
+## 版本原则
 
-- 回归测试：**30 passed**；
-- 三维 Gaussian/watershed 压力测试：冻结的 seed/persistence 网格中，有限尺寸激活体积分数仅 **0.67%–2.94%**；
-- SPARC 诊断：`N=2693`，`a_E=1.097458984856508e-10 m s^-2`，`chi2/dof=1.610215393925522`，raw RMS `0.1329097576083664 dex`。
+- `v1.2.0`：历史 Communications Physics 投稿快照，永久冻结；
+- `v2.2.0`：当前 PRD referee-hardened 投稿候选版。
 
-三维结果是**否定性/压力测试**，不是 N-body 预测。它说明“瞬时、单尺度 Gaussian basin”不足以自动产生体积占优的 V 相，真实理论仍需要非线性 basin 层级、历史或不同的粗粒化规则。
+已经发布的 tag/release 不强制移动；后续科学修改一律增加新版本号。
 
-## 许可与归档
+## 归档
 
-原创代码采用 MIT License。`CITATION.cff` 用于 GitHub 引用展示，`.zenodo.json` 用于 Zenodo GitHub integration。Zenodo 发布后应把软件 DOI 回填到论文 Code Availability，并在论文 DOI 出现后建立软件—论文的 related identifier。
+稳定 Zenodo 项目 DOI：`10.5281/zenodo.22042564`  
+ORCID：`0009-0000-3121-7972`
+
+## 许可证
+
+原创代码采用 MIT License。第三方数据继续遵守其原始许可条件。
 
 
-## v1.2 发布说明
+### v2.2.0 新增
 
-新增 `analysis_zeldovich_basin_history.py`：固定 Lagrangian watershed basin 经 Zel'dovich 形变演化，直接由 Jacobian 计算区域体积、密度、膨胀率和 `Gamma`。在 `D=1` 的冻结基准中，严格 active 体积分数为 0.26%--3.89%，吸收历史为 0.73%--4.85%，去掉 basin-wide single-stream 条件后的运动学上限仍仅 1.50%--8.72%。这是一项 obstruction test，不是 N-body 暗能量丰度预测。
+加入共享控制/global competition 与 global-budget identifiability 审计；不把目标 abundance 作为拟合输入。
 
-公开仓库：https://github.com/Wujijiandao/ainstein-regional-dark-phases
 
-本轮投稿对应 GitHub Release：`v1.2.0`  
-预期固定链接：https://github.com/Wujijiandao/ainstein-regional-dark-phases/releases/tag/v1.2.0
+## v2.2.0 GitHub 回归
 
-稳定 Zenodo 软件归档 DOI：`10.5281/zenodo.22042564`  
-DOI 链接：https://doi.org/10.5281/zenodo.22042564
-
-ORCID：https://orcid.org/0009-0000-3121-7972
-
-论文与代码都使用上述稳定 DOI，并同时记录精确 GitHub release tag 以锁定本次投稿所对应的代码版本。Zenodo 仍可能显示各版本的单独 DOI；本项目在稿件中使用上述项目级稳定 DOI 作为长期引用入口。
+默认仓库的 source-available 测试为 **67 passed**。submission-matched reviewer archive 的完整 follow-up 测试为 **47 passed**；两者有重叠，不能相加。

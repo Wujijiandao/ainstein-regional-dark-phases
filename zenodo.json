@@ -1,0 +1,25 @@
+{
+  "title": "AInstein Regional Dark Phases: Reproducibility Code",
+  "description": "PRD v2.2.0 science-closure reproducibility code for regional gravitational phases and dark-sector phenomenology.",
+  "creators": [
+    {
+      "name": "Zhang, Yuzhan",
+      "orcid": "0009-0000-3121-7972",
+      "affiliation": "Independent Researcher"
+    }
+  ],
+  "license": "mit",
+  "upload_type": "software",
+  "version": "2.2.0",
+  "keywords": [
+    "dark matter",
+    "dark energy",
+    "gravitation",
+    "phase transitions",
+    "cosmic web",
+    "galaxy dynamics",
+    "effective field theory"
+  ],
+  "access_right": "open",
+  "language": "eng"
+}

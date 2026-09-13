@@ -4,11 +4,26 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ainstein-regional-dark-phases"
-version = "1.2.0"
-description = "Reproducibility code for regional gravitational phase-transition diagnostics"
+version = "2.2.0"
+description = "Reproducibility code for regional gravitational phases and dark-sector phenomenology"
 requires-python = ">=3.10"
-dependencies = ["numpy>=1.26", "scipy>=1.11", "matplotlib>=3.8", "scikit-image>=0.24"]
+dependencies = [
+  "numpy>=1.26",
+  "scipy>=1.11",
+  "matplotlib>=3.8",
+  "scikit-image>=0.24",
+  "pandas>=2.2"
+]
 
 [tool.pytest.ini_options]
-testpaths = ["tests"]
+testpaths = [
+  "tests",
+  "current/reproducibility_followup/tests",
+  "current/research_v1.4/tests",
+  "current/research_v1.5/tests",
+  "current/research_v1.8/tests",
+  "current/research_v1.9/tests",
+  "current/research_v2.0/tests",
+  "current/research_v2.2/tests"
+]
 addopts = "-ra"

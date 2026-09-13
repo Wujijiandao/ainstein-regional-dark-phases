@@ -1,35 +1,30 @@
 {
   "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
   "@type": "SoftwareSourceCode",
-  "name": "AInstein Regional Dark Phases: Reproducibility Code",
-  "description": "Deterministic analysis and regression-test suite for the manuscript Regional gravitational phases and a geometric active-charge law for dark-sector phenomenology.",
-  "version": "1.2.0",
-  "datePublished": "2026-08-21",
+  "name": "AInstein Regional Dark Phases",
+  "version": "2.2.0",
+  "description": "Reproducibility code for regional gravitational phases and dark-sector phenomenology.",
   "codeRepository": "https://github.com/Wujijiandao/ainstein-regional-dark-phases",
-  "author": [
-    {
-      "@type": "Person",
-      "@id": "https://orcid.org/0009-0000-3121-7972",
-      "givenName": "Yuzhan",
-      "familyName": "Zhang",
-      "affiliation": "Independent Researcher"
-    }
+  "license": "https://spdx.org/licenses/MIT",
+  "dateModified": "2026-09-13",
+  "author": {
+    "@type": "Person",
+    "givenName": "Yuzhan",
+    "familyName": "Zhang",
+    "affiliation": "Independent Researcher",
+    "@id": "https://orcid.org/0009-0000-3121-7972"
+  },
+  "identifier": "https://doi.org/10.5281/zenodo.22042564",
+  "programmingLanguage": [
+    "Python"
   ],
-  "license": "https://spdx.org/licenses/MIT.html",
-  "programmingLanguage": "Python",
-  "runtimePlatform": "Python >=3.10",
   "keywords": [
     "dark matter",
     "dark energy",
-    "emergent gravity",
+    "gravitation",
     "phase transitions",
     "cosmic web",
     "galaxy dynamics",
-    "Zel'dovich approximation"
-  ],
-  "identifier": "https://doi.org/10.5281/zenodo.22042564",
-  "sameAs": [
-    "https://doi.org/10.5281/zenodo.22042564",
-    "https://github.com/Wujijiandao/ainstein-regional-dark-phases/releases/tag/v1.2.0"
+    "effective field theory"
   ]
 }
