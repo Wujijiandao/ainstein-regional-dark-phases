@@ -4,12 +4,12 @@ Reproducibility code for the manuscript **“Regional gravitational phases and a
 
 ## Current status
 
-The default branch tracks the **PRD science-closure candidate v2.2.0**. The earlier Communications Physics snapshot remains permanently preserved by the GitHub tag/release **v1.2.0** and is not rewritten.
+The default branch tracks the **PRD science-closure state v2.2.0**. The exact public software snapshot is preserved by GitHub Release **v2.2.0** and Zenodo v3. The earlier Communications Physics snapshot remains permanently preserved by GitHub tag/release **v1.2.0** and is not rewritten.
 
 The repository is intentionally split into two reproducibility layers:
 
 - the top-level `src/`, `tests/`, `results/`, `figures/`, and `docs/` directories preserve the public v1.2 baseline calculations;
-- `current/` contains the additional nonlinear particle-mesh, descendant-history, control-state, causal-response, nonlinear-1PI, stochastic-conversion, and phase–geometry feedback calculations used by the PRD v2.2.0 manuscript.
+- `current/` contains the additional nonlinear particle-mesh, descendant-history, control-state, causal-response, nonlinear-1PI, stochastic-conversion, phase–geometry feedback, and global-competition calculations used by the PRD v2.2.0 manuscript.
 
 This layout keeps the historical release reproducible while making the current manuscript additions explicit instead of silently overwriting the original submission snapshot.
 
@@ -44,7 +44,7 @@ pip install -r requirements.txt
 pytest -q
 ```
 
-For the v2.2.0 clean GitHub candidate this source-available suite reports **67 passed**. The larger reviewer archive reports **47 passed** with frozen history tables; the two counts overlap and are not additive.
+For the v2.2.0 clean GitHub state this source-available suite reports **67 passed**. The larger submission-matched reviewer archive reports **47 passed** with frozen history tables; the two counts overlap and are not additive.
 
 The root pytest configuration runs the historical v1.2 suite plus all current source-only deterministic suites. The two PM-history-dependent branch-parity/causal-kinetics suites require the larger frozen descendant-history tables supplied in the submission-matched reviewer archive and are documented separately rather than silently vendored as multi-megabyte CSV files. For analysis-by-analysis commands and scope notes, see:
 
@@ -73,19 +73,21 @@ python src/analysis_emg.py
 
 - **v1.2.0**: immutable historical Communications Physics submission snapshot.
 - **v2.1.1**: PRD referee-hardened checkpoint.
-- **v2.2.0**: current bounded PRD science-closure candidate on `main`.
+- **v2.2.0**: bounded PRD science-closure release and current scientific baseline.
 
 A tag or release must never be force-moved to a different commit. New scientific revisions receive a new version.
 
 ## Citation and archive
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22042564.svg)](https://doi.org/10.5281/zenodo.22042564)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22731819.svg)](https://doi.org/10.5281/zenodo.22731819)
 
 - Repository: https://github.com/Wujijiandao/ainstein-regional-dark-phases
-- Stable Zenodo project DOI: `10.5281/zenodo.22042564`
+- GitHub release: https://github.com/Wujijiandao/ainstein-regional-dark-phases/releases/tag/v2.2.0
+- Exact v2.2.0 Zenodo archive DOI: `10.5281/zenodo.22731819`
+- Zenodo all-versions DOI: `10.5281/zenodo.22042563`
 - ORCID: https://orcid.org/0009-0000-3121-7972
 
-The stable project DOI identifies the software archive across versions. `CITATION.cff`, `.zenodo.json`, and `codemeta.json` describe the current default-branch snapshot; the exact historical v1.2 metadata remain recoverable from tag `v1.2.0`.
+Use the exact-version DOI when citing the software snapshot matched to the PRD manuscript. Use the all-versions DOI when a citation should resolve to the evolving software record across releases.
 
 ## License
 

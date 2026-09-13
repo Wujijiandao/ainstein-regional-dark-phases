@@ -1,31 +1,29 @@
-# Release metadata — AInstein Regional Dark Phases v1.2.0
+# Release metadata — AInstein Regional Dark Phases v2.2.0
 
 ## GitHub release
 - Repository: `Wujijiandao/ainstein-regional-dark-phases`
-- Tag: `v1.2.0`
-- Release title: `AInstein Regional Dark Phases v1.2.0`
-- Release URL: https://github.com/Wujijiandao/ainstein-regional-dark-phases/releases/tag/v1.2.0
-- Release date: 2026-08-21
+- Tag: `v2.2.0`
+- Release title: `v2.2.0 — PRD science closure`
+- Release URL: https://github.com/Wujijiandao/ainstein-regional-dark-phases/releases/tag/v2.2.0
+- Release date: 2026-09-13
 - License: MIT
 
-## Stable archival identifier
-- Zenodo project DOI: `10.5281/zenodo.22042564`
-- DOI URL: https://doi.org/10.5281/zenodo.22042564
+## Archival identifiers
+- Exact v2.2.0 Zenodo DOI: `10.5281/zenodo.22731819`
+- Exact DOI URL: https://doi.org/10.5281/zenodo.22731819
+- Zenodo all-versions DOI: `10.5281/zenodo.22042563`
+- All-versions DOI URL: https://doi.org/10.5281/zenodo.22042563
 - ORCID: `0009-0000-3121-7972`
 
-The manuscript cites the stable Zenodo project DOI and the exact GitHub release tag. Zenodo may additionally assign a release-specific DOI; the project DOI above is retained as the long-lived software citation entry used in the manuscript.
+Use the exact DOI for a citation intended to identify the software snapshot matched to the PRD manuscript. Use the all-versions DOI for a citation intended to resolve to the evolving project record.
 
 ## Release summary
-Submission-hardening release following adversarial pre-submission review. No frozen scientific regression target has been changed. The release contains 30 deterministic tests, the static Gaussian-watershed obstruction test, the history-dependent Zel'dovich basin obstruction test, the conditional leaf-constrained active-charge calculation, phase/interface diagnostics, and the SPARC consistency check.
+The v2.2.0 science-closure release adds the shared-control/global-competition and global-budget-identifiability audit. It extends the passive reciprocal-feedback sign restriction to stable shared Gaussian controls and distinguishes passive shared mediation from a genuinely derived global phase budget. No completed microscopic abundance prediction is claimed.
 
-## GitHub release body
-Use `metadata/GITHUB_RELEASE_NOTES_v1.2.0.md`.
+## Reproducibility status
+- GitHub source-available suite: **67 passed**.
+- Submission-matched reviewer archive: **47 passed** with frozen history tables.
+- The two suites overlap and are not additive.
 
-## Before release
-1. Commit the v1.2.0 metadata and code to `main`.
-2. Run `pytest -q` and confirm `30 passed`.
-3. Confirm the public SPARC helper works or run the self-contained archive privately.
-4. Create tag/release `v1.2.0`.
-5. Confirm the release URL resolves.
-6. Confirm Zenodo GitHub integration archives the release under the project record.
-7. Submit the manuscript only after the public GitHub release and DOI both resolve.
+## Versioning policy
+The `v2.2.0` tag/release is immutable. Metadata-only corrections on `main` do not move the tag. Any later scientific revision receives a new version.

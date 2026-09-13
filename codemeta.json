@@ -14,7 +14,8 @@
     "affiliation": "Independent Researcher",
     "@id": "https://orcid.org/0009-0000-3121-7972"
   },
-  "identifier": "https://doi.org/10.5281/zenodo.22042564",
+  "identifier": "https://doi.org/10.5281/zenodo.22731819",
+  "sameAs": "https://doi.org/10.5281/zenodo.22042563",
   "programmingLanguage": [
     "Python"
   ],
