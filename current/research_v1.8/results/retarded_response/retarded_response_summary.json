@@ -1,0 +1,45 @@
+{
+  "benchmark_input": {
+    "m2": 4.0,
+    "kappa": 0.02,
+    "Lambda": 0.5,
+    "tau": 0.02,
+    "gamma_inv_Lambda": 2.0,
+    "inertia_tau_over_Lambda": 0.04,
+    "c2": 0.5,
+    "gX": 0.7,
+    "tauX": 0.4,
+    "lambda_even_gate": 1.2,
+    "synthetic_complex_noise_fraction": 0.002
+  },
+  "spectral_checks": {
+    "minimum_Im_G_for_positive_omega_k0": 0.0012499712506599849,
+    "static_susceptibility_exact": 0.25,
+    "static_susceptibility_KK": 0.25000000000000006,
+    "KK_quad_error": 6.751984295719768e-14,
+    "KK_relative_error": 2.220446049250313e-16
+  },
+  "inverse_response_identification": {
+    "m2_hat": 3.9986511206460795,
+    "kappa_hat": 0.02059369443609956,
+    "gamma_hat": 2.00009748281204,
+    "Lambda_hat": 0.49997563048479443,
+    "inertia_hat": 0.04097493346534217,
+    "tau_hat": 0.020486468193406958,
+    "c2_hat": 0.5025925045984106
+  },
+  "cross_response_identification": {
+    "gX_hat": 0.6999999999999998,
+    "tauX_hat": 0.3999999999999999
+  },
+  "even_gate_identification": {
+    "m2_intercept_hat": 4.000000000000001,
+    "lambdaE_hat": 1.199999999999998
+  },
+  "structural_selection_rules": {
+    "linear_odd_response": "G_chiX allowed because chi and X are branch-odd",
+    "linear_even_to_odd_response_at_symmetric_parent": "G_chiE = 0 by branch parity",
+    "even_gate_measurement": "lambda_E = d_E Re[(G_chih^R(0,0;E))^{-1}]",
+    "odd_kernel_measurement": "K_X^R = G_chiX^R / G_chih^R"
+  }
+}

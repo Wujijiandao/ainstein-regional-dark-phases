@@ -1,0 +1,57 @@
+{
+  "canonical_1PI_vertices": {
+    "r0": 4.0,
+    "u4": -72.0,
+    "u6": 960.0
+  },
+  "exact_phase_landscape": {
+    "daughter_spinodal_r": 4.5,
+    "symmetric_triple_coexistence_r": 3.375,
+    "chi_coexistence_squared": 1.125,
+    "chi_coexistence": 1.0606601717798212,
+    "baseline_to_coexistence_shift_r0_minus_rcoex": 0.625,
+    "factorization_max_abs_error": 4.440892098500626e-15,
+    "coexistence_wall_Csigma": 0.5166892426183266,
+    "coexistence_width_10_90_over_xi0": 1.645275999066359,
+    "near_coexistence_Rc_over_xi_coefficient": 1.8371173070873834,
+    "near_coexistence_Fstar_over_E0xi3_coefficient": 7.30452207959374
+  },
+  "higher_order_static_response": {
+    "R1": 0.25,
+    "R3": 0.28125,
+    "R5": 2.9296875,
+    "reconstructed_from_exact_R": {
+      "r": 4.0,
+      "u4": -72.0,
+      "u6": 960.0
+    },
+    "synthetic_response_noise_fraction": 0.0002,
+    "fit_from_perturbed_equation_of_state": {
+      "r": 3.999896102051015,
+      "u4": -71.99263879754767,
+      "u6": 962.6132640861717,
+      "r_coex": 3.36514948058764,
+      "r_daughter_spinodal": 4.486865974116853
+    }
+  },
+  "even_gate_response_benchmark": {
+    "lambda_E": 1.2,
+    "E_coexistence": -0.5208333333333334,
+    "E_daughter_spinodal": 0.4166666666666667,
+    "interpretation": "internal response-identification benchmark only; not a cosmological threshold fit"
+  },
+  "local_KMS_benchmark": {
+    "Theta_input": 0.3,
+    "Theta_max_abs_recovery_error": 1.6653345369377348e-16,
+    "xi0_internal": 0.1414213562373095,
+    "Theta_over_E0xi3": 106.06601717798213,
+    "interpretation": "optional local-equilibrium/FDT benchmark; AInstein cosmic coarse graining is not assumed thermal"
+  },
+  "structural_conclusion": [
+    "branch-even gate is the quadratic 1PI vertex r(E), not the old Gamma-only selector",
+    "branch-odd h selects C versus V after the even landscape has made daughter branches accessible",
+    "r,u,v are measurable from nonlinear static response / zero-momentum 1PI vertices",
+    "local-KMS noise can be measured from S_chichi and Im G_R; without a KMS/large-deviation closure abundance remains undetermined",
+    "thin-wall nucleation gives a rate exponent only after the stochastic/noise sector is specified"
+  ]
+}

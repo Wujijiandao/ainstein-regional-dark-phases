@@ -1,0 +1,46 @@
+{
+  "reciprocal_static_elimination": {
+    "max_abs_identity_error": 1.4210854715202004e-14,
+    "r_eff": "r + lambda*E0 - Cx*g^2",
+    "u_eff": "u - 3*Ce*lambda^2",
+    "h_eff": "g*X0",
+    "alpha_coexistence_at_beta0": 0.625,
+    "beta_coexistence_at_alpha0": 6.383671769061692,
+    "alpha_parent_instability": 4.0
+  },
+  "passive_feedback_sign": {
+    "Delta_r_zero_source": "-Cx*g^2 <= 0",
+    "Delta_u_zero_source": "-3*Ce*lambda^2 <= 0",
+    "conclusion": "local reciprocal passive feedback cannot harden the parent at this order; it makes daughter accessibility easier or unchanged"
+  },
+  "dynamic_reciprocal_loop": {
+    "Cx": 1.0,
+    "Lambda_chi": 0.5,
+    "Lambda_X": 0.8,
+    "stability_condition": "Cx*g^2 < r",
+    "critical_alpha": 4.0,
+    "retarded_static_shift_max_abs_error": 0.0
+  },
+  "ou_feedback_benchmarks": {
+    "Theta": 0.3,
+    "reciprocal_stationary_current_matrix_norm": 9.28879225241625e-16,
+    "reciprocal_covariance_vs_Theta_Hinv_max_abs_error": 1.1102230246251565e-16,
+    "reciprocal_stationary_current_power": 6.902532920683856e-32,
+    "nonreciprocal_stationary_current_matrix_norm": 1.1406414480265246,
+    "nonreciprocal_stationary_current_power": 0.12058111380145278,
+    "nonreciprocal_max_real_drift_eigenvalue": -1.4000000000000004,
+    "interpretation": "nonreciprocal negative feedback can remain linearly stable but carries a nonzero stationary probability current; it is not representable by the same local equilibrium free energy"
+  },
+  "conserved_carrier_identity": {
+    "max_abs_rho_plus_p_minus_bmu_error": 0.0,
+    "dust_mu": 1.7,
+    "vacuum_mu": 0.0,
+    "statement": "for b>0, exact p=-rho implies mu=d rho/db=0; a dust-to-vacuum constitutive conversion of one conserved carrier therefore requires an explicit energy/exchange ledger"
+  },
+  "structural_conclusion": [
+    "symmetry-allowed reciprocal phase-to-geometry feedback renormalizes the same 1PI vertices measured in v1.9",
+    "stable local Gaussian reciprocal feedback has fixed softening signs and cannot by itself self-limit a finite converted abundance",
+    "a self-regulating feedback mechanism must involve saturation/higher-order geometry, nonlocal competition, or genuinely nonequilibrium nonreciprocal response",
+    "the nonreciprocal route cannot be reduced to a static Landau potential and therefore requires the Schwinger-Keldysh/large-deviation sector already identified in v1.9"
+  ]
+}

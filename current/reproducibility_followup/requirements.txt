@@ -1,0 +1,5 @@
+numpy>=2.0
+scikit-image>=0.25
+pytest>=8
+matplotlib>=3.9
+pandas>=2.2

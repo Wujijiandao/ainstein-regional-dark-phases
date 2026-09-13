@@ -1,0 +1,19 @@
+{
+  "gaussian_elimination_identity_max_error": 2.1316282072803006e-14,
+  "minimum_eigenvalue_of_G_should_be_nonnegative": -2.6086656283793565e-15,
+  "maximum_eigenvalue_of_induced_minus_G_should_be_nonpositive": 2.6086656283793565e-15,
+  "rank1_G_nonzero_eigenvalue": 6.200000000000001,
+  "rank1_induced_max_eigenvalue": 2.0450635864795811e-16,
+  "odd_budget_m1": 0.2,
+  "odd_budget_allowed_total_fraction_min": 0.2,
+  "odd_budget_allowed_total_fraction_max": 1.0,
+  "even_budget_m2": 0.4,
+  "even_budget_fixed_total_fraction": 0.4,
+  "m1_m2_example_fD": 0.6,
+  "m1_m2_example_fC": 0.30000000000000004,
+  "m1_m2_example_fV": 0.1,
+  "odd_constraint_simplex_ok": true,
+  "odd_constraint_max_error": 5.551115123125783e-17,
+  "passive_fraction_nondecreasing_all_frozen_seeds": true,
+  "interpretation": "Stable reciprocal Gaussian shared controls induce a negative-semidefinite q-space kernel and therefore do not generate positive long-range competition. Exact global constraints can self-limit phase volume, but the constrained budget is an input unless independently derived. In the symmetric D/C/V benchmark, a conserved odd moment fixes C-V imbalance but not total conversion; an even moment would fix total conversion, but no existing AInstein conservation law fixes chi^2."
+}
